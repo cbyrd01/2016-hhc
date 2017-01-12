@@ -26,15 +26,15 @@ Looking at Santa's business card, there are two social media accounts, **twitter
 
 Santa's Twitter timeline is filled with interesting Tweets that at first glance don't make a lot of sense:
 
-![Santa Twitter Feed](img/santa-tweets.png)
+![Santa Twitter Feed](img/santa-tweets-1.png)
 
 To check for hidden messages, I first copied the Tweets into a text editor, removing any extra information and spacing with the following result:
 
-![Santa Tweets Combined](img/tweets-combined.png)
+![Santa Tweets Combined](img/tweets-combined-1.png)
 
 Now we're getting something - there appears to be a message encoded as ASCII art! To see the full picture we'll need to zoom out (and rotate the resulting image).
 
-![Santa Tweets Decoded](img/tweets-decoded.png)
+![Santa Tweets Decoded](img/tweets-decoded-1.png)
 
 Awesome! Santa obviously has a hidden message for us, making reference to a **BUG BOUNTY**. We'll file that information away in case it is of use later.
 
@@ -54,7 +54,7 @@ Using the URL from the paper on the desk (https://www.northpolewonderland.com) c
 
 This allows us to download the SantaGram_v4.2.zip file. It contains a single file, SantaGram_v4.2a.apk
 
-![SantaGram Zip File Contents](img/zip-contents.png)
+![SantaGram Zip File Contents](img/zip-contents-1.png)
 
 However, this file is encrypted. It's only using ZipCrypto, so should be easy to crack. However, first let's see if we already have a password that will decrypt the file. The first try, "BUG BOUNTY" from the Twitter message didn't work. However, not all passwords are that complex. After a couple tries, the password was identified as "bugbounty" with lowercase and no space. It figures.
 
